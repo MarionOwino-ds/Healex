@@ -1,8 +1,5 @@
-// Check that JavaScript is connected
-
 console.log("Healex website loaded");
 
-// Welcome message
 
 window.addEventListener("load", function () {
     console.log("Welcome to Healex");
