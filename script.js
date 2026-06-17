@@ -4,8 +4,6 @@ window.addEventListener("load", function () {
     console.log("Welcome to Healex");
 });
 
-// Buttons (logs a click, doesn't break anything if no buttons exist)
-
 const buttons = document.querySelectorAll("button");
 
 buttons.forEach(function (button) {
@@ -14,7 +12,7 @@ buttons.forEach(function (button) {
     });
 });
 
-// Forms (Book Now / Send Message)
+// Forms 
 
 const forms = document.querySelectorAll("form");
 
