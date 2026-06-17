@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healex Home</title>
+    <title>Healex | Physiotherapy & Recovery Clinic</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <img src="images/logo.png" alt="Logo">
+        <div class="logo">
+            <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#2c8b72"/>
+                <rect x="13" y="7" width="4" height="16" fill="white"/>
+                <rect x="7" y="13" width="16" height="4" fill="white"/>
+            </svg>
+            Healex
+        </div>
 
         <nav>
             <a href="index.html">Home</a>
@@ -19,103 +26,136 @@
             <a href="contact.html">Contact</a>
         </nav>
 
-        <button>Get Started</button>
+        <a href="contact.html" class="btn">Get Started</a>
     </header>
 
-    <section>
-        <section class="hero">
+    <section class="hero">
 
-    <div class="hero-image">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
+                 alt="Physiotherapist helping a patient">
+        </div>
 
-        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
-             alt="Physiotherapy">
+        <div class="hero-content">
 
-    </div>
-
-    <div class="hero-content">
-
-        <h1>
-            Transforming Pain Into Strength
-            One Step At A Time
-        </h1>
-
-        <p>
-            We believe movement is life. Our expert physiotherapists
-            provide personalized care to help you recover from injury,
-            manage pain and improve mobility.
-        </p>
-
-        <button>Book An Appointment</button>
-
-    </div>
-
-    <div class="appointment-form">
-
-        <h2>Book An Appointment</h2>
-
-        <form>
-
-            <input type="text" placeholder="Full Name">
-
-            <input type="email" placeholder="Email Address">
-
-            <select>
-                <option>Select Service</option>
-                <option>Sports Therapy</option>
-                <option>Manual Therapy</option>
-                <option>Pain Management</option>
-            </select>
-
-            <input type="date">
-
-            <button type="submit">
-                Book Now
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-<section class="about-preview">
-
-    <h2>The Story Behind Our Healing Hands</h2>
-
-    <div class="about-cards">
-
-        <div class="about-card">
-
-            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=500"
-                 alt="Patient Care">
-
-            <h3>Passion, Care & Expertise</h3>
+            <h1>Transforming Pain Into Strength, One Step At A Time</h1>
 
             <p>
-                Dedicated professionals helping you recover faster.
+                We believe movement is life. Our expert physiotherapists provide
+                personalized care to help you recover from injury, manage pain,
+                and improve mobility so you can get back to doing what you love.
             </p>
+
+            <a href="#book" class="btn">Book An Appointment</a>
 
         </div>
 
-        <div class="about-card">
+        <div class="appointment-form" id="book">
 
-            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=500"
-                 alt="Therapy">
+            <h2>Book An Appointment</h2>
 
-            <h3>Restore Motion</h3>
+            <form>
 
-            <p>
-                Personalized treatment plans for every patient.
-            </p>
+                <input type="text" placeholder="Full Name" required>
+
+                <input type="email" placeholder="Email Address" required>
+
+                <select required>
+                    <option value="">Select Service</option>
+                    <option>Sports Therapy</option>
+                    <option>Manual Therapy</option>
+                    <option>Pain Management</option>
+                </select>
+
+                <input type="date">
+
+                <button type="submit" class="btn">Book Now</button>
+
+            </form>
 
         </div>
 
-    </div> 
+    </section>
 
-</section>
+    <section class="about-preview">
+
+        <div class="section-title">
+            <h2>The Story Behind Our Healing Hands</h2>
+            <p>Years of experience, one mission: helping you move freely again.</p>
+        </div>
+
+        <div class="about-cards">
+
+            <div class="about-card">
+                <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=500"
+                     alt="Therapist caring for a patient">
+                <h3>Passion, Care & Expertise</h3>
+                <p>Behind every treatment is a dedicated team committed to your wellbeing.</p>
+            </div>
+
+            <div class="about-card">
+                <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=500"
+                     alt="Physiotherapy treatment session">
+                <h3>Restoring Motion, Renewing Life</h3>
+                <p>Patient-first techniques designed to get you back to full strength.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="services-preview">
+
+        <div class="section-title">
+            <h2>Personalized Physiotherapy Solutions For Every Body</h2>
+            <p>Care plans tailored to your recovery, not someone else's.</p>
+        </div>
+
+        <div class="services-preview-grid">
+
+            <div class="feature">
+                <h3>Sports Therapy</h3>
+                <p>Recover faster and prevent future injuries.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Manual Therapy</h3>
+                <p>Hands-on care to reduce pain and improve movement.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Pain Management</h3>
+                <p>Plans built around chronic and acute pain relief.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Rehabilitation</h3>
+                <p>Structured programs for long-term wellness.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="testimonial">
+
+        <div class="section-title">
+            <h2>Transforming Lives, One Recovery At A Time</h2>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "I couldn't walk properly after my injury. Thanks to Healex,
+                I'm back to running marathons. The care and attention I
+                received was incredible."
+            </p>
+            <h4>Patricia Sanders</h4>
+        </div>
+
+    </section>
 
     <footer>
-        <p>Healex 2026</p>
+        <p>&copy; 2026 Healex. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
